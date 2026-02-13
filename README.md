@@ -2,6 +2,12 @@
 
 A small PyQt5 desktop application that reads a WooCommerce product CSV and automatically fills Yoast SEO meta columns using a local Ollama LLM.
 
+***IMPORTANT***
+## Language note
+This tool is optimized for **Italian WooCommerce CSVs** and generates SEO fields in **Italian**.  
+For quality reasons, the model instructions (prompts), stopwords, CTA phrases, and text filters are written in Italian.  
+To use the tool in another language, customize those language-specific sections accordingly.
+
 ## What it generates
 For each product row, the tool generates:
 - **Yoast Focus Keyphrase** (`Meta: _yoast_wpseo_focuskw`) derived from the product name
